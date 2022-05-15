@@ -78,8 +78,8 @@ def clear():
 
 def sendmail(to,content):
     server = smtplib.SMTP_SSL("smtp.gmail.com",465)
-    server.login('harshfree0586@gmail.com','harsh87269')
-    server.sendmail('harshfree0586@gmail.com',to ,content)
+    server.login('your mail','your password')
+    server.sendmail('reciever mail',to ,content)
     server.close()
 
 def screenshot():
@@ -135,7 +135,7 @@ if __name__ =="__main__":
         
         elif "search about" in query:
             speak(" Searching about your query ")
-            chromepath = "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
+            chromepath = "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"        """edit your web browser path"""
             search =query.replace("search about",'').lower()
             wb.get(chromepath).open.__new__(search)
         
