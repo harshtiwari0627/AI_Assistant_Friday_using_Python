@@ -84,7 +84,7 @@ def sendmail(to,content):
 
 def screenshot():
     img = pyautogui.screenshot()
-    img.save("D:\ss.png")
+    img.save("")
 
 def cpu():
     cpu_usage = str(psutil.cpu_percent())
